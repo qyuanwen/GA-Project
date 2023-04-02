@@ -40,7 +40,23 @@ st.sidebar.markdown(
         """,
         unsafe_allow_html=True,
 )
-
+def set_bg_hack_url():
+    '''
+    A function to set background image from a url.
+    '''
+    image_url = "https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702048137.jpg"
+    st.markdown(
+        f"""
+        <style>
+            .stApp {{
+                background-image: url('{image_url}');
+                background-size: cover;
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+set_bg_hack_url()
 # sidebar contents
 #st.sidebar.image(Image.open('image/logo/logo.jpg'))
 #st.sidebar.write("For Careers/Business Opportunity, please contact me at:")
