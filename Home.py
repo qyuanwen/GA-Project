@@ -44,7 +44,7 @@ def set_bg_hack_url():
     '''
     A function to set background image from a url.
     '''
-    image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF7pQ1f_nIJhgvjKihmj2yUJddyHL4r-RS3g&usqp=CAU"
+    image_url = "https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701796494.jpg"
     st.markdown(
         f"""
         <style>
