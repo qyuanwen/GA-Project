@@ -62,12 +62,22 @@ with st.sidebar.form(key = 'Form_1'):
 
     st.form_submit_button("Submit")
 
+# Import the model_selection
+pickled_model = pickle.load(open('finalized_model.pkl', 'rb'))
+
 # Saving the input as a dataframe
 def user_input():
-    data = {'ques_1': ques_1_options.index(ques_1),
-        'ques_2': ques_2_options.index(ques_2),
-        'ques_3': ques_3_options.index(ques_3)}
-    inputs = pd.DataFrame(data,index=[0])
+    d = {}
+    for i in pickled_model.feature_names_in_.tolist():
+        d[i] = [0]
+    if ques_1_options.index(ques_1) == 'WEEKDAY':
+        d['day_type_WEEKDAY'][0] = 1
+    else:
+        d['day_type_WEEKENDS/HOLIDAY'][0] = 1
+    d['time_per_hour'][0] = int(ques_2_options.index(ques_2))
+    station = "station_name_" + ques_3_options.index(ques_3)
+    d[station][0] = 1
+    inputs = pd.DataFrame(d)    
     return inputs
 
 df = user_input()
@@ -76,8 +86,6 @@ df = user_input()
 #@st.subheader('User Input Parameters')
 #st.write(df)
 
-# Import the model_selection
-pickled_model = pickle.load(open('finalized_model.pkl', 'rb'))
 
 # Define predict_result_text
 result_details = {
