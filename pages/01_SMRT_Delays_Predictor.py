@@ -86,7 +86,7 @@ st.write(df)
 
 # Act as a check to check the inputs
 #@st.subheader('User Input Parameters')
-#st.write(df)
+
 
 
 # Define predict_result_text
@@ -100,7 +100,6 @@ result_details = {
 prediction = pickled_model.predict(df)
 prediction_name = result_details[str(prediction[0])]
 
-st.write(prediction)
 
 # Returns the details of the predictions
 st.subheader('Prediction')
