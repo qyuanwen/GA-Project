@@ -82,6 +82,7 @@ def user_input():
     return inputs
 
 df = user_input()
+print(df)
 
 # Act as a check to check the inputs
 #@st.subheader('User Input Parameters')
@@ -98,6 +99,8 @@ result_details = {
 # Make the prediction
 prediction = pickled_model.predict(df)
 prediction_name = result_details[str(prediction[0])]
+
+print(prediction)
 
 # Returns the details of the predictions
 st.subheader('Prediction')
