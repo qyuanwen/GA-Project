@@ -71,7 +71,7 @@ def user_input():
     for i in pickled_model.feature_names_in_.tolist():
         d[i] = [0]
     if ques_1 != '' and ques_2 != '' and ques_3 != '':
-        if ques_1_options.index(ques_1) == 'WEEKDAY':
+        if ques_1 == 'WEEKDAY':
             d['day_type_WEEKDAY'][0] = 1
         else:
             d['day_type_WEEKENDS/HOLIDAY'][0] = 1
