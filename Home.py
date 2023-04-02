@@ -19,7 +19,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Set Page Title
-st.set_page_config(page_title="Home", layout="wide")
+st.set_page_config(page_title="Home", layout="wide+expanded")
 
 # Set the title
 title = "Welcome to SMRT Delays Predictor!"
