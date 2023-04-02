@@ -70,13 +70,14 @@ def user_input():
     d = {}
     for i in pickled_model.feature_names_in_.tolist():
         d[i] = [0]
-    if ques_1_options.index(ques_1) == 'WEEKDAY':
-        d['day_type_WEEKDAY'][0] = 1
-    else:
-        d['day_type_WEEKENDS/HOLIDAY'][0] = 1
-    d['time_per_hour'][0] = int(ques_2_options.index(ques_2))
-    station = "station_name_" + ques_3_options.index(ques_3)
-    d[station][0] = 1
+    if ques_1 != '' and ques_2 != '' and ques_3 != '':
+        if ques_1_options.index(ques_1) == 'WEEKDAY':
+            d['day_type_WEEKDAY'][0] = 1
+        else:
+            d['day_type_WEEKENDS/HOLIDAY'][0] = 1
+        d['time_per_hour'][0] = int(ques_2)
+        station = "station_name_" + ques_3
+        d[station][0] = 1
     inputs = pd.DataFrame(d)    
     return inputs
 
