@@ -42,7 +42,7 @@ st.sidebar.markdown(
 )
 
 # sidebar contents
-#st.sidebar.image(Image.open('image/logo/logo.png'))
+#st.sidebar.image(Image.open('image/logo/logo.jpg'))
 #st.sidebar.write("For Careers/Business Opportunity, please contact me at:")
 #st.sidebar.write("**Email:** junwei.ye.sg@gmail.com")
 #st.sidebar.write("**Linkedin:** https://www.linkedin.com/in/ye-junwei/")
