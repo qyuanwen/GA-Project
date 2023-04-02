@@ -91,7 +91,7 @@ df = user_input()
 # Define predict_result_text
 result_details = {
     '1': 'Yes, it will get affected',
-    '0': 'No, it will not get affected.',
+    '0': 'No, it will not get affected.'
     }
 
 
