@@ -82,7 +82,7 @@ def user_input():
     return inputs
 
 df = user_input()
-st.write(df)
+
 
 # Act as a check to check the inputs
 #@st.subheader('User Input Parameters')
