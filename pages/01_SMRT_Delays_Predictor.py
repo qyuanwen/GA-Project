@@ -66,7 +66,7 @@ with st.sidebar.form(key = 'Form_1'):
 def user_input():
     data = {'ques_1': ques_1_options.index(ques_1),
         'ques_2': ques_2_options.index(ques_2),
-        'ques_3': ques_3_options.index(ques_3),}
+        'ques_3': ques_3_options.index(ques_3)}
     inputs = pd.DataFrame(data,index=[0])
     return inputs
 
