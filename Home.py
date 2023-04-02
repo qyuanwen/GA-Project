@@ -30,7 +30,7 @@ st.sidebar.markdown(
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/25b046164876779.Y3JvcCw5ODEsNzY4LDIxLDA.png);
+                background-image: url(https://www.smrttrains.com.sg/portals/0/2019_SMRT%20Trains.png?ver=2019-04-18-165650-773);
                 background-repeat: no-repeat;
                 background-size: 250px 49px;
                 padding-top: 2px;
