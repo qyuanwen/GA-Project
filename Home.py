@@ -67,7 +67,6 @@ set_bg_hack_url()
 # Set the content
 with st.container():
     st.write("Welcome to SMRT Delays predictor!")
-    st.write("For mobile users, please click on the \">\" button on the top right corner of the page.")
     st.write("Unfortunately, NorthEast line, Sengkang and Punggol LRT have not been added into the predictor as of now, please wait for future updates.")
     
     st.write("")
