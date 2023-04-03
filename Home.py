@@ -66,7 +66,10 @@ set_bg_hack_url()
 
 # Set the content
 with st.container():
-    st.write("Welcome to SMRT Delays predictor!")
+    st.write("Welcome to SMRT Delays information page")
+    st.write("To start predicting which station has a relatively high chance to experience delays and fault, please click into SMRT Delays Predictor on the left sidebar.")
+    st.write("If you are interested in each station history on their delays/breakdown/faults information, please click into SMRT Delays Tableau on the left sidebar.")
+
     st.write("Unfortunately, NorthEast line, Sengkang and Punggol LRT have not been added into the predictor as of now, please wait for future updates.")
     
     st.write("")
