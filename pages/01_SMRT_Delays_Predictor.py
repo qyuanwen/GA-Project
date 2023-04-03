@@ -78,7 +78,7 @@ with st.sidebar.form(key = 'Form_1'):
     )
     st.write("")
 
-    st.form_submit_button("Submit")
+    st.form_submit_button("Tell me!")
 
 # Import the model_selection
 pickled_model = pickle.load(open('finalized_model.pkl', 'rb'))
@@ -109,8 +109,8 @@ df = user_input()
 
 # Define predict_result_text
 result_details = {
-    '1': 'Yes, it will get affected',
-    '0': 'No, it will not get affected.'
+    '1': 'Yes, there is a relatively high chance that this station will get affected by delays or experience some kind of fault',
+    '0': 'No, there is a relatively low chance that this station will get affected by delays or experience some kind of fault.'
     }
 
 
