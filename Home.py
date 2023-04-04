@@ -40,23 +40,7 @@ st.sidebar.markdown(
         """,
         unsafe_allow_html=True,
 )
-def set_bg_hack_url():
-    '''
-    A function to set background image from a url.
-    '''
-    image_url = "https://static.vecteezy.com/system/resources/previews/015/087/558/original/character-flat-drawing-train-seen-from-the-front-prepares-to-carry-passengers-quickly-safe-comfortable-to-their-destination-mass-rapid-and-public-transportation-cartoon-design-illustration-vector.jpg"
-    st.markdown(
-        f"""
-        <style>
-            .stApp {{
-                background-image: url('{image_url}');
-                background-size: cover;
-            }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-set_bg_hack_url()
+
 # sidebar contents
 #st.sidebar.image(Image.open('image/logo/logo.jpg'))
 #st.sidebar.write("For Careers/Business Opportunity, please contact me at:")
