@@ -33,24 +33,6 @@ st.write("This is the place where you can input the time per hour, day type and 
         will predict whether it will be affected by delays or breakdowns. Try it now and start planning your route!")
 st.markdown("##")
 
-# Background image
-def set_bg_hack_url():
-    '''
-    A function to set background image from a url.
-    '''
-    image_url = "https://static.vecteezy.com/system/resources/previews/015/087/558/original/character-flat-drawing-train-seen-from-the-front-prepares-to-carry-passengers-quickly-safe-comfortable-to-their-destination-mass-rapid-and-public-transportation-cartoon-design-illustration-vector.jpg"
-    st.markdown(
-        f"""
-        <style>
-            .stApp {{
-                background-image: url('{image_url}');
-                background-size: cover;
-            }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-set_bg_hack_url()
 # Define sidebar title
 st.sidebar.header('Input the 3 features below')
 
